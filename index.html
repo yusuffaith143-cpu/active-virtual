@@ -22,6 +22,9 @@
     @media(max-width:520px){.wrap{width:min(var(--max),calc(100% - 30px))}.hero h1{font-size:3.45rem}.hero-copy{font-size:.98rem}.hero-art{min-height:300px;gap:8px}.art-card{height:255px}.art-card.second{height:220px;margin-top:45px}.art-card:before{width:125px;height:175px;top:38px}.art-card:after{width:150px;height:135px;top:5px}.floating-tag{left:-4px;top:15px;font-size:.63rem}.talent-grid,.service-grid,.price-grid,.steps{grid-template-columns:1fr}.portrait{height:290px}.service{min-height:190px}.service h3{margin-top:22px}.price-card ul{min-height:0}.trust-inner{font-size:.65rem}.work-visual{min-height:260px}.contact-copy h2{font-size:3rem}}
     .portrait:before,.portrait:after{content:none}.portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
     .art-card:before,.art-card:after{content:none}.art-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+    .about-section{position:relative;overflow:hidden;background:radial-gradient(ellipse at 86% 8%,rgba(119,74,181,.18),transparent 34%),linear-gradient(180deg,#121218,#101113 78%)}.about-section:before{content:"";position:absolute;width:420px;height:420px;right:-170px;top:180px;border:1px solid rgba(198,243,106,.14);border-radius:50%;box-shadow:0 0 0 38px rgba(123,78,180,.04),0 0 0 80px rgba(123,78,180,.025);pointer-events:none}.about-content{position:relative;z-index:1}.about-intro{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;margin-bottom:48px}.about-title{font-size:clamp(2.7rem,5.6vw,5.4rem);line-height:.98;letter-spacing:-.075em;margin:16px 0 15px;max-width:720px}.about-title span{color:var(--lime)}.about-subtitle{color:#cdb4f0;font-weight:700;letter-spacing:.02em;margin:0 0 22px}.about-lead{font-size:1.02rem;color:#d0d0ca;max-width:650px;margin:0}.about-belief{position:relative;min-height:250px;padding:30px;border:1px solid rgba(205,180,240,.25);border-radius:7px;background:linear-gradient(145deg,rgba(102,66,148,.24),rgba(23,25,28,.92) 68%);display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}.about-belief:after{content:"AV";position:absolute;right:-8px;bottom:-48px;font-size:13rem;line-height:1;font-weight:950;letter-spacing:-.1em;color:rgba(205,180,240,.055);pointer-events:none}.about-belief-label{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--lime);font-weight:800}.about-belief p{position:relative;z-index:1;font-size:clamp(1.2rem,2.1vw,1.7rem);line-height:1.35;letter-spacing:-.025em;margin:30px 0 0;max-width:420px}.about-belief p span{color:#d8b8ff}.about-pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.about-pillar{min-height:190px;padding:25px 27px;background:linear-gradient(135deg,#191a20,#17191c);border:1px solid var(--line);border-radius:6px}.about-pillar span{color:var(--lime);font-size:.7rem;letter-spacing:.14em;font-weight:800}.about-pillar h3{font-size:1.35rem;letter-spacing:-.04em;margin:16px 0 8px}.about-pillar p{font-size:.9rem;color:var(--muted);margin:0;max-width:490px}.about-difference{display:grid;grid-template-columns:1.15fr .85fr;gap:42px;align-items:center;margin-top:54px;padding:34px;background:linear-gradient(120deg,rgba(84,54,121,.2),rgba(23,25,28,.78) 58%);border:1px solid rgba(205,180,240,.18);border-radius:7px}.about-difference h3{font-size:clamp(1.7rem,3vw,2.7rem);line-height:1.08;letter-spacing:-.055em;margin:13px 0 20px;max-width:540px}.about-difference h3 span{color:var(--lime)}.about-difference p{font-size:.91rem;color:#c2c2bd;margin:0 0 12px;max-width:570px}.about-values-label{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:#d8b8ff;font-weight:800;margin-bottom:14px}.about-values{display:grid;grid-template-columns:1fr 1fr;gap:10px}.about-values span{padding:13px 14px;border:1px solid rgba(244,241,233,.13);background:rgba(16,17,19,.58);border-radius:4px;font-size:.82rem;font-weight:700}.about-values span:before{content:"";display:inline-block;width:6px;height:6px;margin:0 10px 1px 0;border-radius:50%;background:var(--lime)}.about-promise{display:flex;align-items:center;justify-content:space-between;gap:28px;margin-top:18px;padding:25px 30px;background:var(--lime);color:var(--ink);border-radius:5px}.about-promise h3{font-size:clamp(1.45rem,2.5vw,2rem);letter-spacing:-.05em;margin:0}.about-promise p{max-width:570px;margin:0;font-size:.9rem;font-weight:550}
+    @media(max-width:800px){.about-intro,.about-difference{grid-template-columns:1fr;gap:24px}.about-intro{margin-bottom:30px}.about-belief{min-height:210px}.about-pillar{min-height:0}.about-difference{margin-top:36px}.about-promise{align-items:flex-start;flex-direction:column;gap:10px}}
+    @media(max-width:520px){.about-title{font-size:2.7rem}.about-pillars{grid-template-columns:1fr}.about-pillar,.about-difference{padding:22px}.about-values{gap:8px}.about-values span{padding:11px 9px;font-size:.76rem}.about-promise{padding:22px}}
   </style>
 </head>
 <body>
@@ -29,7 +32,7 @@
     <nav class="nav" aria-label="Main navigation">
       <a class="logo" href="#home" aria-label="ACTIVE VIRTUAL home">ACTIVE<span>.</span> VIRTUAL</a>
       <div class="nav-links" id="navLinks">
-        <a href="#talent">Meet the talent</a><a href="#services">What we do</a><a href="#work">Our work</a><a href="#pricing">Packages</a><a href="#contact">Contact</a>
+        <a href="#about">About us</a><a href="#talent">Meet the talent</a><a href="#services">What we do</a><a href="#work">Our work</a><a href="#pricing">Packages</a><a href="#contact">Contact</a>
       </div>
       <a class="btn btn-primary" href="#contact">Start a project ↗</a>
       <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
@@ -50,6 +53,52 @@
         <div class="art-card second"><img src="https://raw.githubusercontent.com/yusuffaith143-cpu/active-virtual/refs/heads/main/mark.jpeg" alt="Mark"><div class="art-label"><div><strong>MARK</strong><small>Tech & culture</small></div><span class="art-index">AV / 002</span></div></div>
       </div>
     </div></section>
+
+    <section class="section about-section" id="about">
+      <div class="wrap about-content">
+        <div class="about-intro">
+          <div>
+            <div class="eyebrow">ABOUT ACTIVE VIRTUAL</div>
+            <h2 class="about-title">WE CREATE THE FACES OF <span>TOMORROW'S INFLUENCE.</span></h2>
+            <p class="about-subtitle">A Virtual Influencer Agency</p>
+            <p class="about-lead">ACTIVE VIRTUAL is a virtual influencer agency developing original digital personalities and creating new possibilities for brands through virtual talent, creative advertising and digital storytelling.</p>
+          </div>
+          <div class="about-belief">
+            <span class="about-belief-label">A new kind of influence</span>
+            <p>We believe the future of influence goes beyond familiar faces. It is about creating <span>distinctive personalities</span> with their own identities, voices and potential to connect with audiences.</p>
+          </div>
+        </div>
+        <div class="about-pillars">
+          <article class="about-pillar">
+            <span>OUR MISSION</span>
+            <h3>Original personalities. New possibilities.</h3>
+            <p>To create original virtual influencers with distinct identities and personalities, and connect them with brands through innovative digital advertising, storytelling and creative partnerships.</p>
+          </article>
+          <article class="about-pillar">
+            <span>OUR VISION</span>
+            <h3>Influence, built for tomorrow.</h3>
+            <p>To build a recognised virtual influencer agency creating influential digital personalities and new opportunities for brands in Nigeria and beyond.</p>
+          </article>
+        </div>
+        <div class="about-difference">
+          <div>
+            <div class="eyebrow">WHAT MAKES US DIFFERENT</div>
+            <h3>WE DON'T JUST UNDERSTAND THE BRIEF. <span>WE UNDERSTAND THE BRAND.</span></h3>
+            <p>We take time to understand each brand's identity, audience, challenges and ambitions. We think alongside our clients, pay attention to the details and approach every campaign with genuine commitment.</p>
+            <p>Our goal is to create work that feels so aligned with your brand that clients can see their vision reflected in every detail.</p>
+          </div>
+          <div>
+            <div class="about-values-label">OUR VALUES</div>
+            <div class="about-values"><span>Originality</span><span>Creativity</span><span>Authenticity</span><span>Commercial Value</span></div>
+          </div>
+        </div>
+        <div class="about-promise">
+          <h3>WE WANT YOU TO FEEL UNDERSTOOD.</h3>
+          <p>More than delivering creative work, we want every brand we work with to leave knowing that we understood what makes them different.</p>
+        </div>
+      </div>
+    </section>
+
     <div class="trust-strip"><div class="wrap trust-inner"><span>Digital-first talent</span><span>Product storytelling</span><span>Made for social platforms</span><span>Nigeria · Worldwide</span></div></div>
 
     <section class="section" id="talent"><div class="wrap">
